@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    min-height: 100vh;
+}
+
+/* CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* TOPO */
+
+.topo {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.topo h1 {
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+
+.topo span {
+    color: #d40000;
+}
+
+.topo p {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 20px;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+
+.card {
+    display: block;
+    background: #1b1b1b;
+    border-radius: 15px;
+    padding: 35px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    border: 2px solid transparent;
+    min-height: 220px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #d40000;
+    box-shadow: 0 0 20px rgba(212, 0, 0, 0.5);
+}
+
+/* ÍCONE */
+
+.icone {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* TÍTULO DO CARD */
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 28px;
+}
+
+/* TEXTO */
+
+.card p {
+    color: #bdbdbd;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+/* CARD SAIR */
+
+.card.sair {
+    background: #450000;
+}
+
+.card.sair:hover {
+    background: #700000;
+    border-color: #ff0000;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    .topo {
+        margin-bottom: 35px;
+    }
+
+    .topo h1 {
+        font-size: 40px;
+    }
+
+    .topo p {
+        font-size: 17px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        min-height: auto;
+        padding: 30px;
+    }
+
+    .icone {
+        font-size: 50px;
+    }
+}
